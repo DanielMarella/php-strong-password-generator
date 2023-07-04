@@ -11,7 +11,8 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
 
 <?php 
 
-
+    $passwordLenght = $_GET ['passwordLenght'];
+    
 ?>
 
 
@@ -27,7 +28,7 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
     <h1>
         Random Password Generator
     </h1>
-    <form action="./index.php">
+    <form action="./index.php" method="GET">
         <label for="passwordLenght">how long do you want the password?</label><br>
         <input type="number" name="passwordLenght"><br>
         <input type="submit" value="Submit">
