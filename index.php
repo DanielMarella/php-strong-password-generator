@@ -24,6 +24,16 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
     <title>StrongPasswordGenerator</title>
 </head>
 <body>
-    
+    <h1>
+        Random Password Generator
+    </h1>
+    <form action="./index.php">
+        <label for="passwordLenght">how long do you want the password?</label><br>
+        <input type="number" name="passwordLenght"><br>
+        <input type="submit" value="Submit">
+    </form> 
+
+
+
 </body>
 </html>
