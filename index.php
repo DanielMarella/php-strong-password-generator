@@ -11,8 +11,16 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
 
 <?php 
 
-    $passwordLenght = $_GET ['passwordLenght'];
+    $length = $_GET ['passwordLenght'];
     
+function random_string($length) {
+    $str = random_bytes($length);
+    $str = base64_encode($str);
+    return $str;
+}
+
+$password = random_string($length);
+
 ?>
 
 
@@ -34,7 +42,12 @@ Verificato il corretto funzionamento del nostro codice, spostiamo la logica in u
         <input type="submit" value="Submit">
     </form> 
 
+<p>
+    <?php 
 
+    echo "la tua password è: " . $password;
+    ?>
+</p>
 
 </body>
 </html>
